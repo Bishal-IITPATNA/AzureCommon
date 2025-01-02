@@ -23,4 +23,4 @@ jobs:
         with:
           resourceGroupName: "stg-resource-group"
           dataFactoryName: "olympicsdata-adf-02012025"
-          armTemplateFile: 
+          armTemplateFile: "./infrastructure/azure/adf/deployment.json"
