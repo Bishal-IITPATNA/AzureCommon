@@ -1,0 +1,135 @@
+{
+  "id": "/subscriptions/4f0bc2fe-ba53-4d30-98ca-24d15413f123/resourceGroups/dev-resource-group/providers/Microsoft.Resources/deployments/Microsoft.DataFactory-20250103000018",
+  "name": "Microsoft.DataFactory-20250103000018",
+  "type": "Microsoft.Resources/deployments",
+  "properties": {
+    "templateHash": "885626415747157646",
+    "parameters": {
+      "subscription": {
+        "type": "String",
+        "value": "4f0bc2fe-ba53-4d30-98ca-24d15413f123"
+      },
+      "resourceGroup": {
+        "type": "String",
+        "value": "dev-resource-group"
+      },
+      "name": {
+        "type": "String",
+        "value": "olympicsdata-adf-02012025"
+      },
+      "version": {
+        "type": "String",
+        "value": "V2"
+      },
+      "location": {
+        "type": "String",
+        "value": "centralus"
+      },
+      "tagsByResource": {
+        "type": "Object",
+        "value": {}
+      },
+      "vNetEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "publicNetworkAccess": {
+        "type": "Bool",
+        "value": true
+      },
+      "privateEndpoints": {
+        "type": "Array",
+        "value": []
+      },
+      "gitConfigureLater": {
+        "type": "Bool",
+        "value": true
+      },
+      "gitRepoType": {
+        "type": "String",
+        "value": "FactoryVSTSConfiguration"
+      },
+      "gitAccountName": {
+        "type": "String",
+        "value": ""
+      },
+      "gitProjectName": {
+        "type": "String",
+        "value": ""
+      },
+      "gitRepositoryName": {
+        "type": "String",
+        "value": ""
+      },
+      "gitCollaborationBranch": {
+        "type": "String",
+        "value": "master"
+      },
+      "gitRootFolder": {
+        "type": "String",
+        "value": "/"
+      },
+      "userAssignedIdentities": {
+        "type": "Object",
+        "value": {
+          "type": "SystemAssigned"
+        }
+      },
+      "userAssignedIdentitiesStr": {
+        "type": "String",
+        "value": "{\"type\": \"SystemAssigned,UserAssigned\", \"userAssignedIdentities\": {\"\": {}"
+      },
+      "vaultBaseUrl": {
+        "type": "String",
+        "value": ""
+      },
+      "keyName": {
+        "type": "String",
+        "value": ""
+      },
+      "keyVersion": {
+        "type": "String",
+        "value": ""
+      },
+      "enableCMK": {
+        "type": "Bool",
+        "value": false
+      },
+      "cmkIdentity": {
+        "type": "String",
+        "value": ""
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2025-01-02T18:31:48.1796527Z",
+    "duration": "PT11.8429773S",
+    "correlationId": "f6d2418c-2969-4cbe-94aa-b899118e2b18",
+    "providers": [
+      {
+        "namespace": "Microsoft.DataFactory",
+        "resourceTypes": [
+          {
+            "resourceType": "factories",
+            "locations": [
+              "centralus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [],
+    "outputResources": [
+      {
+        "id": "/subscriptions/4f0bc2fe-ba53-4d30-98ca-24d15413f123/resourceGroups/dev-resource-group/providers/Microsoft.DataFactory/factories/olympicsdata-adf-02012025"
+      }
+    ],
+    "validationLevel": "Template"
+  },
+  "tags": {
+    "marketplaceItemId": "Microsoft.DataFactory"
+  }
+}
