@@ -1,5 +1,5 @@
 {
-  "id": "/subscriptions/4f0bc2fe-ba53-4d30-98ca-24d15413f123/resourceGroups/stg-resource-group/providers/Microsoft.Resources/deployments/Microsoft.DataFactory-20250103000018",
+  "id": "/subscriptions/4f0bc2fe-ba53-4d30-98ca-24d15413f123/resourceGroups/dev-resource-group/providers/Microsoft.Resources/deployments/Microsoft.DataFactory-20250103000018",
   "name": "Microsoft.DataFactory-20250103000018",
   "type": "Microsoft.Resources/deployments",
   "properties": {
