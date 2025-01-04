@@ -24,4 +24,4 @@ jobs:
           resourceGroupName: "dev-resource-group"
           dataFactoryName: "adf-olympicsdata-05012025"
           armTemplateFile: "./infrastructure/azure/adf/deployment.json"
-          armTemplateParametersFile: "./infrastructure/azure/adf/parameters.json"
+          #armTemplateParametersFile: "./infrastructure/azure/adf/parameters.json"
