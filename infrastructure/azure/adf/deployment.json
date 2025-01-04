@@ -7,7 +7,7 @@
             "type": "string"
         },
         "resourceGroup": {
-            "defaultValue": "stg-resource-group",
+            "defaultValue": "dev-resource-group",
             "type": "string"
         },
         "name": {
