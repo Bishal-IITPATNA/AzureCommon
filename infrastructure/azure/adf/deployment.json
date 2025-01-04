@@ -3,15 +3,15 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "subscription": {
-            "defaultValue": "4f0bc2fe-ba53-4d30-98ca-24d15413f123",
+            "defaultValue": "",
             "type": "string"
         },
         "resourceGroup": {
-            "defaultValue": "dev-resource-group",
+            "defaultValue": "",
             "type": "string"
         },
         "name": {
-            "defaultValue": "olympicsdata-adf-05012025",
+            "defaultValue": "myv2datafactory",
             "type": "string"
         },
         "version": {
@@ -19,7 +19,7 @@
             "type": "string"
         },
         "location": {
-            "defaultValue": "centralus",
+            "defaultValue": "eastus",
             "type": "string"
         },
         "tagsByResource": {
