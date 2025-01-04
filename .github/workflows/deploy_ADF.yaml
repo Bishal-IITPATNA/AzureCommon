@@ -21,6 +21,6 @@ jobs:
       - name: Deploy ADF resources
         uses: Azure/arm-deploy@v2
         with:
-          resourceGroupName: "dev-resource-group"
-          dataFactoryName: "adf-olympicsdata-05012025"
-          armTemplateFile: "./infrastructure/azure/adf/deployment.json"
+          subscriptionId: "4f0bc2fe-ba53-4d30-98ca-24d15413f123"
+          resourceGroupName: "stg-resource-group"
+          template: "./infrastructure/azure/adf/deployment.json"
