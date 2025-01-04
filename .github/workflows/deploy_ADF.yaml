@@ -19,9 +19,8 @@ jobs:
           enable-AzPSSession: true
 
       - name: Deploy ADF resources
-        uses: Azure/data-factory-deploy-action@v1.2.0
+        uses: Azure/arm-deploy@v1.2.0
         with:
           resourceGroupName: "dev-resource-group"
           dataFactoryName: "adf-olympicsdata-05012025"
           armTemplateFile: "./infrastructure/azure/adf/deployment.json"
-          #armTemplateParametersFile: "./infrastructure/azure/adf/parameters.json"
