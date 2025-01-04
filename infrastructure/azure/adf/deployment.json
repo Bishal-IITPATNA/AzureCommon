@@ -11,7 +11,7 @@
             "type": "string"
         },
         "name": {
-            "defaultValue": "olympicsdata-adf-03012025",
+            "defaultValue": "olympicsdata-adf-05012025",
             "type": "string"
         },
         "version": {

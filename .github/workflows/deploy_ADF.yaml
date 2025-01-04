@@ -22,5 +22,5 @@ jobs:
         uses: Azure/data-factory-deploy-action@v1.2.0
         with:
           resourceGroupName: "dev-resource-group"
-          dataFactoryName: "olympicsdata-adf-03012025"
+          dataFactoryName: "olympicsdata-adf-05012025"
           armTemplateFile: "./infrastructure/azure/adf/deployment.json"
