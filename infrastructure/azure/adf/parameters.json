@@ -3,52 +3,99 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "subscription": {
-            "value": "4f0bc2fe-ba53-4d30-98ca-24d15413f123"
+            "defaultValue": "4f0bc2fe-ba53-4d30-98ca-24d15413f123",
+            "type": "string"
         },
         "resourceGroup": {
-            "value": "dev-resource-group"
+            "defaultValue": "dev-resource-group",
+            "type": "string"
         },
         "name": {
-            "value": "olympicsdata-adf-02012025"
+            "defaultValue": "olympicsdata-adf-05012025",
+            "type": "string"
         },
         "version": {
-            "value": "V2"
+            "defaultValue": "V2",
+            "type": "string"
         },
         "location": {
-            "value": "centralus"
-        },
-        "vNetEnabled": {
-            "value": true
-        },
-        "publicNetworkAccess": {
-            "value": true
-        },
-        "privateEndpoints": {
-            "value": []
-        },
-        "gitConfigureLater": {
-            "value": true
+            "defaultValue": "centralus",
+            "type": "string"
         },
         "tagsByResource": {
-            "value": {}
+            "type": "Object"
+        },
+        "vNetEnabled": {
+            "defaultValue": false,
+            "type": "bool"
+        },
+        "publicNetworkAccess": {
+            "defaultValue": true,
+            "type": "bool"
+        },
+        "privateEndpoints": {
+            "type": "array",
+            "metadata": {
+                "description": "Private endpoints. Empty if no private network access selected."
+            }
+        },
+        "gitConfigureLater": {
+            "defaultValue": true,
+            "type": "bool"
+        },
+        "gitRepoType": {
+            "defaultValue": "FactoryVSTSConfiguration",
+            "type": "string"
+        },
+        "gitAccountName": {
+            "defaultValue": "",
+            "type": "string"
+        },
+        "gitProjectName": {
+            "defaultValue": "",
+            "type": "string"
+        },
+        "gitRepositoryName": {
+            "defaultValue": "",
+            "type": "string"
+        },
+        "gitCollaborationBranch": {
+            "defaultValue": "master",
+            "type": "string"
+        },
+        "gitRootFolder": {
+            "defaultValue": "/",
+            "type": "string"
+        },
+        "userAssignedIdentities": {
+            "defaultValue": {
+                "type": "SystemAssigned"
+            },
+            "type": "object"
         },
         "userAssignedIdentitiesStr": {
-            "value": "{\"type\": \"SystemAssigned,UserAssigned\", \"userAssignedIdentities\": {\"/subscriptions/4f0bc2fe-ba53-4d30-98ca-24d15413f123/resourcegroups/databricks-rg-tokyoolympics-adb-02012025-jcx3rjfwpqk5m/providers/Microsoft.ManagedIdentity/userAssignedIdentities/dbmanagedidentity\": {}"
+            "defaultValue": "",
+            "type": "string"
         },
         "vaultBaseUrl": {
-            "value": "https://olympicsdata-kv-02012025.vault.azure.net"
+            "defaultValue": "",
+            "type": "string"
         },
         "keyName": {
-            "value": "Key3"
+            "defaultValue": "",
+            "type": "string"
         },
         "keyVersion": {
-            "value": "b8206b706a8446188929db8a98f7601b"
+            "defaultValue": "",
+            "type": "string"
         },
         "enableCMK": {
-            "value": true
+            "defaultValue": false,
+            "type": "bool"
         },
         "cmkIdentity": {
-            "value": "/subscriptions/4f0bc2fe-ba53-4d30-98ca-24d15413f123/resourcegroups/databricks-rg-tokyoolympics-adb-02012025-jcx3rjfwpqk5m/providers/Microsoft.ManagedIdentity/userAssignedIdentities/dbmanagedidentity"
+            "defaultValue": "",
+            "type": "string"
         }
     }
 }
