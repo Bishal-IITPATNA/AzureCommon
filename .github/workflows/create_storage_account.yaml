@@ -17,11 +17,13 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy Storage Account
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         with: 
+          azcliversion: 2.30.0
           inlineScript: |
+            chmod +x $GITHUB_WORKSPACE/infrastructure/azure/sa/deployment.json
             az deployment group create \
             -- name StorageAccountDeployment \
             -- resource-group stg-resourcegroup \
-            -- template-file ../../infrastructure/azure/sa/deployment.json
+            -- template-file $GITHUB_WORKSPACE/infrastructure/azure/sa/deployment.json
             -- parameters storageAccountType=Standard_GRS
