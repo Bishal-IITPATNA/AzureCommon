@@ -21,7 +21,6 @@ jobs:
         with: 
           azcliversion: 2.30.0
           inlineScript: |
-            chmod +x $GITHUB_WORKSPACE/infrastructure/azure/sa/deployment.json
             az deployment group create \
             -- name StorageAccountDeployment \
             -- resource-group stg-resourcegroup \
