@@ -21,8 +21,4 @@ jobs:
         with: 
           azcliversion: 2.30.0
           inlineScript: |
-            az deployment group create \
-            -- name StorageAccountDeployment \
-            -- resource-group stg-resourcegroup \
-            -- template-file $GITHUB_WORKSPACE/infrastructure/azure/sa/deployment.json
-            -- parameters storageAccountType=Standard_GRS
+            az storage account create -n devtestingsa -g stg-resourcegroup -l centralus --sku Standard_LRS
