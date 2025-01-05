@@ -2,7 +2,7 @@ name: Deploy ADF
 
 on:
   push:
-    branches: [main]
+    branches: [develop]
 
 jobs:
   deploy:
