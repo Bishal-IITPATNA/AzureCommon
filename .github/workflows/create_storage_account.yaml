@@ -23,5 +23,5 @@ jobs:
             az deployment group create \
             -- name StorageAccountDeployment \
             -- resource-group stg-resourcegroup \
-            -- template-file ./infrastructure/azure/sa/deployment.json
+            -- template-file ../../infrastructure/azure/sa/deployment.json
             -- parameters storageAccountType=Standard_GRS
